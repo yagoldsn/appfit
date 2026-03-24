@@ -38,7 +38,7 @@ Tabelas principais:
 - *planos* → tipos de assinatura
 - *usuarios_planos* → vínculo entre alunos e planos
 
-![ER Schema academia](ER_academia.png)
+![ER Schema academia](docs/ER_academia.png)
 
 ---
 
