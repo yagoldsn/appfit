@@ -1,6 +1,9 @@
 # Informações Técnicas / Instalações
 
-
+- instalação express
+```bash
+npm install --save express
+```
 
 ## plataform para banco de dados
-- [neon](https://neon.com/) ou [Supabase](https://supabase.com/)
+- [Supabase](https://supabase.com/)
