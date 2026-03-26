@@ -1,23 +1,38 @@
-# Dependencies
+# =========================
+# Geral
+# =========================
 node_modules/
-npm-debug.log
-yarn-error.log
-
-# Environment variables
 .env
-.env.local
-.env.*.local
+*.log
+.DS_Store
+Thumbs.db
 
-# Build outputs
-dist/
-build/
+# =========================
+# Backend (Node.js / Express)
+# =========================
+back_end/dist/
+back_end/build/
+back_end/logs/
+back_end/coverage/
 
-# IDE
+# =========================
+# Frontend (React / Vite)
+# =========================
+front_end/dist/
+front_end/build/
+front_end/.cache/
+front_end/.vite/
+front_end/coverage/
+
+# =========================
+# Testes
+# =========================
+coverage/
+*.lcov
+
+# =========================
+# IDEs e editores
+# =========================
 .vscode/
 .idea/
 *.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db 
