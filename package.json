@@ -1,0 +1,26 @@
+{
+  "name": "appfit",
+  "version": "1.0.0",
+  "description": "Aplicativo multiplataforma para gestão de aulas e check-in em academias, boxes de crossfit e estúdios.  \r Objetivo: simplificar o processo de check-in, agenda de aulas e comunicação entre alunos e gestores.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagoldsn/appfit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagoldsn/appfit/issues"
+  },
+  "homepage": "https://github.com/yagoldsn/appfit#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
