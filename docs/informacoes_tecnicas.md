@@ -9,22 +9,35 @@
 ## ORM back-end
 - Prisma
 
-## instalação express
+## instalação dependencias
+- express
 ```bash
 npm install --save express
 ```
+- ESlint
+```bash
+npm install eslint -D
+```
+- Prisma client
+```bash
+npm install @prisma/client --save
+```
+- Prisma
+```bash
+npm install prisma --save-dev
+```
+- PG postgres
+```bash
+npm install pg --save
+```
+
 - instalação nodemon para excução das correções automaticamente no projeto
 ```bash
 npm install --save-dev nodemon
 ```
-### instalar e configurar ESlint - correção de erros
+### Configurar ESlint - correção de erros
 
- 1- Instalar ESLint como dev
-```bash
-npm install eslint -D
-```
-
-2- Inicializar configuração
+ 1 - Inicializar configuração
 ```bash
 npx eslint --init
 ```
@@ -137,4 +150,40 @@ export default [
 - npm run lint:fix -> corrige automaticamente
 - npm run format -> aplica so o prettier
 
+## Prisma
 
+### Inicialização:
+```
+npx prisma init
+```
+Isso cria a pasta prisma/ com o arquivo schema.prisma e adiciona .env.
+
+
+## Configurar Conexão Postgres
+
+- No arquivo .env, configure a varialve de conexão.
+
+## Definir o schema do Prisma
+
+No arquivo prisma/schema.prisma:
+
+```
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  name  String
+  email String  @unique
+}
+```
+## Criar as tabelas no banco
+```
+npx prisma migrate dev --name init
+```
