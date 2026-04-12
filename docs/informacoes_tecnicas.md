@@ -1,6 +1,15 @@
 # Informações Técnicas / Instalações
 
-- instalação express
+## plataform para banco de dados
+- [Supabase](https://supabase.com/)
+
+## Banco de dados
+- Postgres
+
+## ORM back-end
+- Prisma
+
+## instalação express
 ```bash
 npm install --save express
 ```
@@ -128,5 +137,4 @@ export default [
 - npm run lint:fix -> corrige automaticamente
 - npm run format -> aplica so o prettier
 
-## plataform para banco de dados
-- [Supabase](https://supabase.com/)
+
