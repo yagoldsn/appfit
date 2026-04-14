@@ -8,12 +8,11 @@ app.use(express.json());
 
 //rotas
 app.get('/', (req, res) => {
-  res.send('Hello World!');
 });
 
 
 
 //configurações de portas e inicialização do servidor
-app.listen(3000, () => {
-    console.log('Server rodando em http://localhost:3000');
+app.listen(4000, () => {
+    console.log('Server rodando em http://localhost:4000');
 });
